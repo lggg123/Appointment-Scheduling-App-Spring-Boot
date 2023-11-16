@@ -1,11 +1,16 @@
 package main.java.codezforlife.com.model;
 
 @Entity
-public class User {
+public class Appointment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String name;
-    private String email;
+
+    @ManyToOne
+    private User user;
+
+    private LocalDateTime startTime;
+    private LocalDateTime endTime;
+    private String description;
     // Constructors, Getters, Setters
 }
