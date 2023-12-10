@@ -4,6 +4,9 @@ import main.java.codezforlife.com.service.AppointmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import java.util.List;
+import main.java.codezforlife.com.model.Appointment;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 @RestController
 @RequestMapping("/appointments")
@@ -14,7 +17,7 @@ public class AppointmentController {
 
     @Autowired
     public AppointmentController(AppointmentService appointmentService) {
-        this.appointmentService = appointmentService
+        this.appointmentService = appointmentService;
     }
 
     @PostMapping

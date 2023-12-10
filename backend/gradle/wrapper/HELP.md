@@ -7,7 +7,7 @@ The following was discovered as part of building this project:
 
 ### Here is a typical directory for this application
 
-ProjectName/
+gradle/wrapper/
 │
 ├── src/
 │   ├── main/
